@@ -1,11 +1,194 @@
 body {
   padding: 0px;
   margin: 0px;
-  font-family: 'Lucida', sans-serif;
+  font-family: 'Muli', sans-serif;
+  font: 16px/24px 'Muli';
+  background-color: #F5F5F5;
+  color: #4D4D4D;
 }
 
-.container-fluid div {
-  /*background-color: #333;*/
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+.container-fluid {
+	max-width: 1100px;
 }
+
+.row {
+	margin: 50px 0px 80px 0px;
+}
+
+.nav {
+	padding-bottom: 20px;
+}
+
+.name {
+	float: left;
+}
+
+.nav-link {
+  height: 40px;
+  float: right;
+}
+
+.featured {
+}
+
+.featured-text {
+	background-color: white;
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
+	height: 300px;
+	z-index: 2;
+	position: absolute;
+	top: 50%;
+	margin-top: -100px;
+	padding: 10px 25px 10px 25px;
+}
+
+.featured-image {
+	height: 400px;
+	background-image: url("https://static1.squarespace.com/static/54f262e2e4b03e3d11ee7e7d/57a8e56cbebafbbe8b4d8e80/57a8e56d59cc6897882eb878/1470686585019/logo_background.jpg?format=2500w");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.08);
+}
+
+.sm-featured-image {
+	background-image: url("https://static1.squarespace.com/static/54f262e2e4b03e3d11ee7e7d/57a923a3b8a79bb9366a7fa7/57a923a359cc6897883164a6/1470702503284/Screens_AKO.jpg?format=1000w");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 350px;
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.08);
+
+}
+
+.sm-featured-text {
+	background-color: white;
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
+	background-color: white;
+	height: 150px;
+	z-index: 2;
+	margin-left: -15%;
+	margin-top: 50px;
+}
+
+.xs-featured-image {
+	background-image: url("https://static1.squarespace.com/static/54f262e2e4b03e3d11ee7e7d/t/561872bbe4b0ae8c3b95449e/1444442811678/logo-04.png?format=750w");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 300px;
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.08);
+
+}
+
+#highlight.xs-featured-image {
+	margin-top: -125px;
+}
+
+#idea {
+	background-image: url("https://static1.squarespace.com/static/54f262e2e4b03e3d11ee7e7d/t/561be034e4b07668122cdb94/1444667448589/zoom-corner-cards.jpg?format=1500w");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#scout.sm-featured-text {
+	margin-left: 10%;
+}
+
+#scout.sm-featured-image {
+	background-image: url("https://static1.squarespace.com/static/54f262e2e4b03e3d11ee7e7d/t/561bdcb1e4b053979dcaa568/1444666548412/posters2.jpg?format=1500w");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: -170px;
+}
+
+#rayel.sm-featured-image {
+	background-image: url("https://static1.squarespace.com/static/54f262e2e4b03e3d11ee7e7d/t/54f3c7a4e4b01184f2b8790b/1425262518360/thumbnail.jpg?format=1000w");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#cards.xs-featured-image {
+	background-image: url("https://static1.squarespace.com/static/54f262e2e4b03e3d11ee7e7d/t/561c037ae4b080d66b104513/1444676479971/serif-corner.jpg?format=1500w");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: -120px;
+}
+
+#arch.xs-featured-image {
+	background-image: url("https://static1.squarespace.com/static/54f262e2e4b03e3d11ee7e7d/t/554810b6e4b0c208be75f9bd/1430786278757/model.jpg?format=1000w");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#greiman.sm-featured-image {
+	background-image: url("https://static1.squarespace.com/static/54f262e2e4b03e3d11ee7e7d/t/561be20be4b0be6a4889fada/1444667917291/stretched.jpg?format=1500w");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: -170px;
+
+}
+
+#greiman.sm-featured-text {
+	margin-left: 10%;
+}
+
+/*Styling for text*/
+
+h1 {
+	font-family: 'Arvo', serif;
+	font-weight: 400;
+	color: #363636;
+	font-size: 32px;
+	line-height: 40px;
+	text-decoration: none;
+}
+
+h2 {
+	font-family: 'Arvo', serif;
+	font-weight: 400;
+	color: #363636;
+	font-size: 22px;
+	line-height: 32px;
+}
+
+h3 {
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+}
+
+h5 {
+	font-family: 'Arvo', serif;
+	font-weight: 700;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #363636;
+}
+
+a {
+	text-decoration: none;
+	color: #363636;
+}
+
+.nav-link a {
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 12px;
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+ 
+}
+
+
+
+
