@@ -1,19 +1,10 @@
-/*Media Queries*/
-
-@media only screen and (max-width: 500px) {
-	h1 {
-		font-size: 28px;
-		line-height: 36px;
-	}
-}
-
 /*Div properties*/
 
 body {
   padding: 0px;
   margin: 0px;
   font-family: 'Muli', sans-serif;
-  font: 16px/24px 'Muli';
+  font: 14px/22px 'Muli';
   background-color: #FAFAFA;
   color: #4D4D4D;
 }
@@ -27,7 +18,6 @@ body {
 }
 
 .nav {
-	padding-bottom: 10px;
 }
 
 .name {
@@ -67,8 +57,8 @@ body {
 }
 
 .featured-image {
-	height: 400px;
-	background-image: url("https://static1.squarespace.com/static/54f262e2e4b03e3d11ee7e7d/57a8e56cbebafbbe8b4d8e80/57a8e56d59cc6897882eb878/1470686585019/logo_background.jpg?format=2500w");
+	height: 500px;
+	background-image: url('../images/coffee_hero.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -76,7 +66,7 @@ body {
 }
 
 .sm-featured-image {
-	background-image: url("https://static1.squarespace.com/static/54f262e2e4b03e3d11ee7e7d/57a923a3b8a79bb9366a7fa7/57a923a359cc6897883164a6/1470702503284/Screens_AKO.jpg?format=1000w");
+	background-image: url('../images/ako_hero.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -105,7 +95,7 @@ body {
 }
 
 .xs-featured-image {
-	background-image: url("https://static1.squarespace.com/static/54f262e2e4b03e3d11ee7e7d/t/561872bbe4b0ae8c3b95449e/1444442811678/logo-04.png?format=750w");
+	background-image: url('../images/highlight_hero.png');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -113,10 +103,10 @@ body {
 	padding: 0px;
 	position: relative;
 	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.08);
-	-moz-transition: all .2s ease-in;
-    -o-transition: all .2s ease-in;
-    -webkit-transition: all .2s ease-in;
-    transition: all .2s ease-in;
+	-moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
 }
 
 .xs-featured-image:hover {
@@ -149,7 +139,7 @@ body {
 }
 
 #idea {
-	background-image: url("https://static1.squarespace.com/static/54f262e2e4b03e3d11ee7e7d/t/561be034e4b07668122cdb94/1444667448589/zoom-corner-cards.jpg?format=1500w");
+	background-image: url('../images/idea_hero.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -160,7 +150,7 @@ body {
 }
 
 #scout.sm-featured-image {
-	background-image: url("https://static1.squarespace.com/static/54f262e2e4b03e3d11ee7e7d/t/561bdcb1e4b053979dcaa568/1444666548412/posters2.jpg?format=1500w");
+	background-image: url('../images/scoutposters_hero.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -168,14 +158,14 @@ body {
 }
 
 #rayel.sm-featured-image {
-	background-image: url("https://static1.squarespace.com/static/54f262e2e4b03e3d11ee7e7d/t/54f3c7a4e4b01184f2b8790b/1425262518360/thumbnail.jpg?format=1000w");
+	background-image: url('../images/rayel_hero.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
 #cards.xs-featured-image {
-	background-image: url("https://static1.squarespace.com/static/54f262e2e4b03e3d11ee7e7d/t/561c037ae4b080d66b104513/1444676479971/serif-corner.jpg?format=1500w");
+	background-image: url('../images/businesscards_hero.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -183,14 +173,14 @@ body {
 }
 
 #arch.xs-featured-image {
-	background-image: url("https://static1.squarespace.com/static/54f262e2e4b03e3d11ee7e7d/t/554810b6e4b0c208be75f9bd/1430786278757/model.jpg?format=1000w");
+	background-image: url('../images/architecture_hero.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
 #greiman.sm-featured-image {
-	background-image: url("https://static1.squarespace.com/static/54f262e2e4b03e3d11ee7e7d/t/561be20be4b0be6a4889fada/1444667917291/stretched.jpg?format=1500w");
+	background-image: url('../images/greiman_hero.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -200,6 +190,26 @@ body {
 
 #greiman.sm-featured-text {
 	margin-left: 10%;
+}
+
+.test-menu {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #FAFAFA;
+	z-index: 10;
+	opacity: 0;
+	transform: translateX(100%);
+	pointer-events: none;
+	transition: all 1s;
+}
+
+.is-open {
+	transform: none;
+	opacity: 1;
+	pointer-events: auto;
 }
 
 /*Styling for text*/
@@ -218,7 +228,7 @@ h2 {
 	font-weight: 400;
 	color: #363636;
 	font-size: 22px;
-	line-height: 32px;
+	line-height: 30px;
 }
 
 h3 {
@@ -231,9 +241,12 @@ h3 {
 
 h4 {
 	text-transform: uppercase;
-	font-size: 16px;
-	font-weight: 400;
+	font-size: 14px;
+	font-weight: 700;
 	letter-spacing: 1.5px;
+	color: #363636;
+	line-height: 22px;
+
 }
 
 h5 {
@@ -242,7 +255,6 @@ h5 {
 	font-size: 16px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	color: #363636;
 }
 
 a {
@@ -265,7 +277,7 @@ a {
 
 a:hover {
 	color: #363636;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 h1.homepage:hover {
@@ -275,12 +287,20 @@ h2.homepage:hover {
 	color: #642240;
 }
 
+hr {
+	border-bottom: 0.25px solid #363636;
+}
+
+h6 {
+	font-size: 14px;
+}
+
 
 /*Coffee*/
 
 .detail-feature-image {
-	height: 300px;
-	background-image: url("https://static1.squarespace.com/static/54f262e2e4b03e3d11ee7e7d/57a8e56cbebafbbe8b4d8e80/57a8e56d59cc6897882eb878/1470686585019/logo_background.jpg?format=2500w");
+	height: 350px;
+	background-image: url('../images/coffee_hero.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -288,24 +308,138 @@ h2.homepage:hover {
 }
 
 .detail-small-image {
-	background-color: #363636;
-	height: 300px;
+	height: 275px;
+	margin: 15px;
+}
+
+#detail-title.row {
+	margin: 0px 0px 100px 0px;
+
+}
+
+#sketch-one.detail-small-image {
+	background-image: url('../images/coffee_logosketch1.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#sketch-two.detail-small-image {
+	background-image: url('../images/coffee_logosketch2.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .detail-featured-text {
 	background-color: rgba(255,255,255,0.95);
 	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.15);
 	z-index: 2;
-	padding: 25px 25px 30px 25px;
+	padding: 5px 25px 30px 25px;
+	margin-left: -10%;
+	margin-top: 40px;
 	-moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
 
+#labels.detail-featured-text {
+	margin-left: 0;
+}
+
 .detail-large-image {
-	background-color: #363636;
 	height: 300px;
 }
 
+.detail-text-large {
+	padding-left: 30px;
+}
 
+#logos.detail-large-image {
+	background-image: url('../images/coffee_3logos.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#label.detail-large-image {
+	background-image: url('../images/coffee_label.jpg');
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+	margin-top: -250px;
+}
+
+#bottles.detail-large-image {
+	background-image: url('../images/coffee_bottles.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 15px;
+	height: 400px;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 500px) {
+
+	h1 {
+		font-size: 26px;
+		line-height: 32px;
+	}
+
+	h2 {
+		font-size: 18px;
+		line-height: 26px
+	}
+
+	body {
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	.row {
+		margin: 25px 0px 50px 0px;
+	}
+
+	.featured-text {
+		top: 58%;
+		margin-top: -100px;
+		padding: 25px 25px 30px 25px;
+		-moz-transition: all .2s ease-in;
+    	-o-transition: all .2s ease-in;
+    	-webkit-transition: all .2s ease-in;
+    	transition: all .2s ease-in;
+	}
+
+	.featured-image {
+		height: 200px;
+	}
+
+	.sm-featured-image {
+		height: 180px;
+	}
+
+	.xs-featured-image {
+		height: 180px;
+	}
+
+	.nav {
+		padding-top: 20px;
+	}
+
+	.featured {
+		padding-bottom: 200px;
+	}
+
+	.detail-small-image {
+	height: 160px;
+	margin: 15px;
+	}
+
+	.detail-featured-text {
+
+	}
+
+}
